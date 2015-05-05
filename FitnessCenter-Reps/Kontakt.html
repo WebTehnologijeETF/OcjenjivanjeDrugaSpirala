@@ -11,42 +11,56 @@
 <BODY>
 	<div id="zaglavlje">
 		
-		<img src="Repslogo2.jpg" alt="Fitness Center Reps logo">
+		<img src="Repslogo2.jpg" alt="Fitness Center Reps logo" id="logo">
 		Reps
 	</div>
 	<ul id="navigacija">
 			<li><a href="index.html">Home</a></li>
-			<li><a href="O#20nama.html">O nama</a></li>
+			
+			<li onmouseover="otvori('m1')" onmouseout="zatvori('m1');"><a href="Onama.html" >O&nbsp;nama</a>
+				<div id="m1" onmouseout="zatvori('m1')">
+					<a href="Galerija.html">Galerija</a>
+				</div>	
+			</li>
 			<li><a href="Ponuda.html">Ponuda</a></li>
-			<li><a href="Savjeti.html">Savjeti</a></li>
+			<li onmouseover="otvori('m2')" onmouseout="zatvori('m2');"><a href="Savjeti.html">Savjeti</a>
+			<div id="m2" onmouseout="zatvori('m2')">
+					<a href="#">Ishrana</a>
+					<a href="#">Trening</a>
+					<a href="#">Suplementi</a>
+				</div>	
+			</li>
 			<li><a href="Linkovi.html">Linkovi</a></li>
-			<li><a id="link" href="Kontakt.html">Kontakt</a></li>
-		</ul>
+			<li><a href="Kontakt.html">Kontakt</a></li>
+		</ul>		
 		
 		<h3> Kontaktirajte nas</h3>
 		<div class="sadrzaj">
 	
 	<form id="forma">
 	
-	<div class="tekst"> Ime:</div>
-	<input class="tip" type="text" name="ime">
-	<div class="prazan">  </div>
+	<label for="ime"> Ime </label>
+	<input type="text" class="tip"  name="ime" id="ime" onblur="validirajIme()"> <div id="greskaIme"></div>
+	
+	<label for="prezime"> Prezime </label>
+	<input type="text" class="tip"  name="prezime" id="prezime" onblur="validirajPrezime()"> <div id="greskaPrezime"></div>
 		
-	<div class="tekst"> E-mail:</div>
-  	<input class="tip" type="email" name="email">
-	<div class="prazan">  </div>
+	<label for="mail1"> E-mail </label>
+  	<input type="email" class="tip"  name="email1" id="mail1" onblur="validirajMail()"> <div id="greskaMail1"></div>
+
+	<label for="mail2"> Potvrda e-maila </label>
+  	<input type="email" class="tip"  name="email2" id="mail2" onblur="istiMail()"> <div id="greskaMail2"></div>	
 	
-	<div class="tekst"> Poruka:</div>
-	<textarea class="unosteksta" name="poruka" rows="6" cols="1">
-	</textarea>
-	<div class="prazan">  </div>
+	<label for="komentar" id="komentar1"> Komentar </label>
+	<textarea class="unosteksta" name="komentar" id="komentar" rows="6" cols="1" onblur="validirajKomentar(this)"></textarea> <div id="greskaKom"></div>
 	
-	<input class="submit" type="submit" value="Pošalji">
+	<input class="submit" type="submit" onclick="return validirajFormu()" value="Pošalji">
 	<input class="reset" type="reset" value="Reset">
 	</form>
 	
 	</div>
 		
 	<div id="podnozje"><p>Made in China...Err made by Emir Hurem</p></div>
+	<script src="skripta.js"></script>
 </BODY>
 </HTML>

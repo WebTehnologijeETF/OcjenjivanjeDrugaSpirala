@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 		<meta charset="UTF-8">
-		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 			<link href="HomePageStyle.css" rel="stylesheet">
+								    <SCRIPT src="javascript.js"></SCRIPT>
 </head>
 	<body ><img src="Slike/Yu-Gi-Oh!2.jpg" id="bg" alt="">
-
-		<img src="Slike/index3.jpg" id="logo">
+		
+		<div class ="logo_class">
+			<img src="Slike/index3.png" id="logo">
+			<h2> Tourunaments </h2>
+		</div>
 		
 		<div class="persona_nav">
-			<div id="sign_out"><a href="">Sign Out</a></div>
+			<div id="sign_out"><a href="RegisterForm.html">Sign Out</a></div>
 			<div id="profile_icon"><a href=""><img src="Slike/prof_pic5.png"></a></div>
 			<div id="message_icon"> <a href=""><img src="Slike/message1.png"></a></div>
-			<div id="search_text"><input type="text" placeholder="search friend..."></div>
+			<div id="search_text"><input type="search" placeholder="search friend..."></div>
 			<div id="search_im"><a href=""><img src="Slike/search2.png"></a></div>
 		</div>
 		
@@ -25,23 +28,117 @@
 			<li id="banlist"><a href="BanListPage.html">Current Banlist </a></li>
 			<li id="about"><a href="ContactForm.html">Contact Us</a></li>
 		</ul>
+		<ul id= "drop_down_list" >
+			<li onclick="spusti('1',event)" >Januar 2015
+				<ul id ="1">
+					<li onclick="spusti('1.1',event)">Za Sve Uzraste
+						<ul id ="1.1">
+							<li> <a href ="">04-01-2015</a></li>
+							<li><a href ="">11-01-2015</a></li>
+							<li ><a href ="">18-01-2015</a></li>
+						</ul>
+					</li>
+					<li onclick="spusti('1.2',event)">Za Djecu
+						<ul id ="1.2">
+							<li> <a href ="">03-01-2015</a></li>
+							<li ><a href ="">10-01-2015</a></li>
+							<li><a href ="">17-01-2015</a></li>
+						</ul>
+					</li>
+				</ul>	
+			</li>
+			<li onclick="spusti('2',event)">Februar 2015
+				<ul id ="2">
+					<li onclick="spusti('2.1',event)">Za Sve Uzraste
+						<ul id ="2.1">
+							<li> <a href ="">01-01-2015</a></li>
+							<li><a href ="">08-01-2015</a></li>
+							<li ><a href ="">15-01-2015</a></li>
+						</ul>
+					</li>
+					<li onclick="spusti('2.2',event)">Za Djecu
+						<ul id ="2.2">
+							<li> <a href ="">07-01-2015</a></li>
+							<li ><a href ="">14-01-2015</a></li>
+							<li><a href ="">21-01-2015</a></li>
+						</ul>
+					</li>
+				</ul>	
+			</li>
+			<br>
+			<li onclick="spusti('2014',event)">Truniri 2014
+				<ul id="2014">
+					<li onclick="spusti('2014.Jan',event)">Januar
+						<ul id = "2014.Jan">
+							<li onclick="spusti('2014.Jan.1',event)"> Za Sve Uzraste
+								<ul id= "2014.Jan.1">
+									<li><a href ="">05-01-2014</a></li>
+									<li><a href ="">12-01-2014</a></li>
+									<li><a href ="">18-01-2014</a></li>
+								</ul>	
+							</li>
+							<li onclick="spusti('2014.Jan.2',event)"> Za Sve Uzraste
+								<ul id= "2014.Jan.2">
+									<li><a href ="">04-01-2014</a></li>
+									<li><a href ="">11-01-2014</a></li>
+									<li><a href ="">17-01-2014</a></li>
+								</ul>	
+							</li>
 
+						</ul>	
+					</li>
+					<li onclick="spusti('2014.Feb',event)">Februar
+						<ul id = "2014.Feb">
+							<li onclick="spusti('2014.Feb.1',event)"> Za Sve Uzraste
+								<ul id= "2014.Jan.1">
+									<li><a href ="">05-01-2014</a></li>
+									<li><a href ="">12-01-2014</a></li>
+									<li><a href ="">18-01-2014</a></li>
+								</ul>	
+							</li>
+							<li onclick="spusti('2014.Feb.2',event)">Za Djecu
+								<ul id= "2014.Feb.2">
+									<li><a href ="">05-01-2014</a></li>
+									<li><a href ="">12-01-2014</a></li>
+									<li><a href ="">18-01-2014</a></li>
+								</ul>
+							</li>
+						</ul>	
+					</li>
+				</ul>	
+			</li>
+			<li onclick="spusti('2013')">Turniri 2013
+				<ul id="2015">
+					<li>Nesto</li>
+					<li>Nesto</li>
+					<li>Nesto</li>
+				</ul>	
+			</li>
+		</ul>
 		<article id="left">
 			<header>
 				<h2>Send us message!</h2>
 				<p> If you have any questions, or you want to tell us something ,or share experience </p>
 			</header>
 			<section id="email">
-				<p> Your e-mail: </p>
-				<input type="text" placeholder="ex:yugi@etf.unsa.ba">
+				<p>E-mail address: </p>
+				<input type="text" id = "email_adresa" placeholder="ex:yugi@etf.unsa.ba" onblur="email()">
+			</section>
+			<section id="telephone">
+				<p>Telephone number: </p>
+				<input type="text"  id ="broj_telefona" placeholder="ex. +38761712443" onblur="telefon()">	
+			</section>
+			<section id="home">
+				<p> Home Adress (optional): </p>
+				<input type="text"  id ="home_address">	
 			</section>
 			<section id="subject">
 				<p> Subject: </p>
-				<input id ="subject_p" type="text">
+				<input type="text" id ="subject_p" onblur="tekst('subject_p')">
 			</section>
 			<br>
-			<input type="text" id="message">
-			<input type="submit" value="Submit" id="submit">
+			<input type="text" id="message" onblur="tekst('message')">
+			<input type="submit" value="Send" id="submit" onclick="provjeri()">
 		</article>
 
 		<aside id="right">
@@ -49,14 +146,22 @@
 				<h3>External Links</h3>
 				<p>Below you have links to related pages </p>
 			</header>
-			<nav id="links">
 				<ul>
-					<il><a href="https://www.facebook.com/yugioh.bihturniri?ref=ts&fref=ts">Facebook page</a></il>
-					<il><a href="http://www.yugi.ba/forum/index.php">Forum</a></il>
-					<il><a href="www.yugioh-planet.net/index.php?option=com_content&view=article&id=461&Itemid=294">Podsection on Yugi-Planet</a></il>
-					<il><a href="https://www.facebook.com/Yugioh.bih?sk=info&tab=page_info"> Facebook Fanpage </a></il>
+					<li>
+						<a href="https://www.facebook.com/yugioh.bihturniri?ref=ts&fref=ts">
+						Facebook page  
+						</a>
+					</li>
+					<li>
+						<a href="http://www.yugi.ba/forum/index.php">
+						Forum </a>
+					</li>
+					<li>
+						<a href="www.yugioh-planet.net/index.php?option=com_content&view=article&id=461&Itemid=294">
+						Yugi-Planet</a>
+					</li>
 				</ul>
-			</nav>
+
 		</aside>
 
 

@@ -11,20 +11,20 @@ font-family: 'Orbitron', sans-serif;
 background-color:#707070;
 }
 
-img{
+#logo{
 height: 128px;
 width: 700px;
 vertical-align: -35px;
 }
 
+/*meni*/
 #navigacija{
-position:relative;
+	position:relative;
 	margin:0;
 	font-style: normal;
 	font-weight:bold;
 	text-decoration:none;
 	padding:0px;
-	margin-top:2px;
 	margin-bottom:2px;
 	float:left;
 	width:100%;
@@ -32,39 +32,61 @@ position:relative;
 	border-bottom: solid #d9e021;
 }
 
+#navigacija li a:hover{
+	background:#d9e021;
+	color:#2f3440;
+}
 
 
-#navigacija li{
+#navigacija div{
+	z-index:5;
+	margin-top:10px;
+	transition:0.15s;
+	position: absolute;
+	visibility: hidden;
+	background: #d9e021;
+	border: 1px solid #2f3440;
+}
+
+#navigacija div a{
+	display:block;
 	height: 25px;
 	width:8em;
 	padding:3px;
-	color:#2f3440 ;
+	color:#2f3440;
 	background-color:#707070;
 	text-decoration:none;
 	text-align:center;
 	position:relative;
-	/*display:inline-block;*/
 	border-radius:1px;
 	list-style-type:none;
 	float:left;
 }
 
-#navigacija li #link{
-	margin: 2px;
-	width:100%;
-	float:left;
-	padding:1px;
-	color:#2f3440;
-	background-color:#d9e021;
-	text-align:center;
-	border-radius:1px;
-    display:inline-block;
+#navigacija div a:hover{
+	background: #d9e021;
+	color: #2f3440;
+		}
+
+
+#navigacija li {
+	display:block;
 	height: 25px;
-	padding-top: 0px;	
-	padding-bottom: 0px;
+	width:8em;
+	padding:3px;
+	color:#2f3440;
+	background-color:#707070;
+	text-decoration:none;
+	text-align:center;
+	position:relative;
+	border-radius:1px;
+	list-style-type:none;
+	float:left;
 }
 
+
 #navigacija li a{
+	height:25px;
 	display:block;
 	color: #d9e021;
 	text-decoration:none;
@@ -121,12 +143,10 @@ text-align:center;
 	border:2px solid rgba(217,222,60,0.9);
 	}
 	
-	.novost img:hover{
-	width:100%;
-	height:100%;
-	transition:0.5s;
+	.sadrzaj  img {
+	width:50%;
+	height:50%;
 	}
-	
 	.detalji{
 	margin:5px 5px;
 	padding:5px;
@@ -203,31 +223,48 @@ text-align:center;
 	min-width:50%;
 	}
 	
-	.tekst{
-	display:block;
-	width:20%;
-	min-width:20%;
-	margin:0 0 0 15%;
-	font-weight:bold;
-	text-align:left;
-	padding:5px 0;
-	white-space:nowrap;
+	label{
+	display:inline-block;  
+	width: 100px;  
+	margin-right:10px;
+	text-align: right; 
+	padding:10px 0;
 	}
-
-	.tip {
+	
+	
+	#komentar1{
 	display:block;
-	width:30%;
-	min-width:30%;
-	margin:0 0 0 15%;
-	padding:5px;
-	border:1px solid rgba(0,0,0,0.7);
+	}
+	
+	.tip{
+	display:inline-block;
+	}
+	
+	#greskaIme,#greskaPrezime,#greskaMail1, #greskaMail2, #greskaKom{
+	color:red;
+	display:inline-block;
+	text-align:right;
+	width:140px;
+	min-width:140px;
+	white-space:nowrap;
+	padding:5px 0;
+	}
+	
+	#greskaKom{
+	display:block;
+	text-align:right;
+	}
+		
+	#error{
+	width: 10px;
+	height:10px;
 	}
 	
 	.unosteksta{
-	position:relative;
 	display:block;
-	margin:0 0 0 15%;
-	width:100%;
+	width:340px;
+	min-width:340px;
+	position:center;
 	border:1px solid rgba(0,0,0,0.7);
 	}
 
@@ -249,11 +286,6 @@ text-align:center;
 	color:#000000;
 	font-weight:bold;
 	border:1px solid rgba(0,0,0,0.7);
-	}
-	
-	.prazan{
-	display:block;
-	padding:5px;
 	}
 	
 	.unos:hover,.unosteksta:hover,.submit:hover,.reset:hover{

@@ -11,6 +11,24 @@
 .logo_class{
 	position:absolute;
 	top: 40px;
+	left: 2%;
+	height: 200px;
+}
+.logo_class2 {
+	font-family:'Varela Round', sans-serif;
+	text-transform: uppercase;
+}
+.logo_class2 h2{
+	margin-left: 30px;
+	margin-top: -20px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 8px black;
+}
+
+.logo_class2{
+	position:absolute;
+	top: 40px;
 	left: 15%;
 	height: 200px;
 }
@@ -66,7 +84,7 @@
 .menu{
 	position: relative;
 	margin-top: 200px;
-	margin-left: 15%;
+	margin-left: 25%;
 	padding-left: 0px;
 	width: 850px;
 	height: 28px;
@@ -79,7 +97,7 @@
 
 }
 .menu li{
-	background-image: url("file:///C:/Users/LavaGolem/Documents/GitHub/YuGiOhTurniri/Slike/Silver.jpg");
+	background-image: url("Slike/Silver.jpg");
 	display: inline;
 	border-top :2px solid lightgray;
 	border-right:  :2px solid lightgray;
@@ -101,7 +119,7 @@
 }
 
 .menu #home{
-	background-image: url("file:///C:/Users/LavaGolem/Documents/GitHub/YuGiOhTurniri/Slike/Zatamljeno.jpg");
+	background-image: url("Slike/Zatamljeno.jpg");
 
 }
 .menu #home a{
@@ -109,7 +127,7 @@
 
 }
 .menu li:hover{
-	background-image: url("file:///C:/Users/LavaGolem/Documents/GitHub/YuGiOhTurniri/Slike/Zatamljeno.jpg");
+	background-image: url("Slike/Zatamljeno.jpg");
 
 }
 .menu #events a{
@@ -128,10 +146,10 @@
 
 }
 .container {
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(165, 165, 165,0.5);
 	position: relative;
 	margin-top: 10px;
-	margin-left: 15%;
+	margin-left: 25%;
 	width: 825px;
 }
 .container .novosti {
@@ -193,7 +211,7 @@ margin-right: 25px;
 	background-color: rgba(165, 165, 165,0.5);
 	position: relative;
 	float: left;
-	margin-left: 15%;
+	margin-left: 25%;
 }
 #right{
 	width: 225px;
@@ -239,9 +257,17 @@ margin-right: 25px;
 #left #telephone p{
 	margin-left: 15px;
 	display: inline;
-	margin-right: 2px;
+	margin-right: 5px;
 }
 #left #telephone{
+	margin-top: 10px;
+}
+#left #home p{
+	margin-left: 15px;
+	display: inline;
+	margin-right: 2px;
+}
+#left #home{
 	margin-top: 10px;
 }
 
@@ -249,7 +275,7 @@ margin-right: 25px;
 	list-style-image: url("Slike/card.jpg");
 }
 
-#turniri section{
+.turniri{
 	position: relative;
 	float: left;
 	width: 412.5px;
@@ -258,29 +284,29 @@ margin-right: 25px;
 	text-align: left;
 
 }
-#turniri #svi_uzrasti{
-	margin-left: 15%;
+#svi_uzrasti{
+	margin-left: 25%;
 	border-right: 2px solid darkgray;
 }
-#turniri #about{
+ .turniri #about{
 	margin-left: 15px;
 }
-#turniri section img{
+.turniri img{
 	float: left;
 	margin: 15px;
 }
-#turniri h2{
+.turniri h2{
 	margin-left: 15px;
 }
-#turniri #location{
+.turniri #location{
 	margin-top: 30px;
 	margin-bottom: 120px;
 }
-#turniri section p{
+.turniri p{
 	margin-right: 25px;
 }
-#turniri section button{
-	background-image: url("file:///C:/Users/LavaGolem/Documents/GitHub/YuGiOhTurniri/SLike/Silver.jpg");
+.turniri button{
+	background-image: url("Slike/Silver.jpg");
 	width:100px;
 	height:40px;
 	border-radius: 10px;
@@ -288,7 +314,120 @@ margin-right: 25px;
 	text-transform: uppercase;
 	margin-left: 156.25px;
 }
-#turniri section button:hover{
-		background-image: url("file:///C:/Users/LavaGolem/Documents/GitHub/YuGiOhTurniri/Slike/Zatamljeno.jpg");
+.turniri button:hover{
+		background-image: url("Slike/Zatamljeno.jpg");
 }
 
+
+#drop_down_list li{
+	background-image: url("Slike/Silver.jpg");
+	border-top :2px solid lightgray;
+	border-right:  :2px solid lightgray;
+	border-left :2px solid lightgray;
+	border-bottom:  :2px solid darkgray;
+	padding-left: 5px;
+	padding-bottom: 0px;
+	background-color: red;
+}
+#drop_down_list{
+	position:  absolute;
+	height: 12px;
+	list-style-type: none;
+	margin-right: 3%;
+	width: 230px;
+	margin-top: 5px;
+
+}
+#drop_down_list li:hover{
+	background-image: url("Slike/Zatamljeno.jpg");
+}
+
+li ul{
+display: none;
+		list-style-type: none;
+
+}
+
+
+#reg{
+		margin-top: 200px;
+	width: 600px;
+	height: 700px;
+	background-color: rgba(165, 165, 165,0.5);
+	position: relative;
+	float: left;
+	margin-left: 2%;
+	display: inline;
+}
+#log{
+		margin-top: 200px;
+	width: 600px;
+	height: 700px;
+	background-color: rgba(165, 165, 165,0.5);
+	position: relative;
+	float: left;
+	border-left: 2px solid  black;
+}
+
+#reg h1{
+	margin-left: 200px;
+	margin-top: 50px;
+}
+#reg_polja {
+	padding-top: 20px;
+	padding-left: 130px;
+
+}
+#reg_polja section input{
+	width: 250px;
+	height: 30px;
+	margin-top: 5px;
+}
+#reg_polja section p{
+	width: 200px;
+	height: 20px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-left: 50px;
+}
+#sign_up{
+	background-image: url("Slike/Silver.jpg");
+	width: 150px;
+	height: 50px;
+	margin-left: 170px;
+	margin-top: 50px;
+}
+#sign_up:hover{
+	background-image: url("Slike/Zatamljeno.jpg");
+
+}
+#log h1{
+	margin-left: 230px;
+	margin-top: 10px;
+}
+#log img{
+	margin-left: 170px;
+	margin-top: 70px;
+
+}
+#log_polja {
+	padding-left: 100px;
+
+}
+#log_polja input{
+	width: 300px;
+	height: 50px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+#sign_in{
+	background-image: url("Slike/Silver.jpg");
+	width: 150px;
+	height: 50px;
+	margin-left: 230px;
+	margin-top: 50px;
+}
+#sign_in:hover{
+	background-image: url("Slike/Zatamljeno.jpg");
+
+}

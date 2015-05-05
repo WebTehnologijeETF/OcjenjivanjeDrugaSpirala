@@ -1,7 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <HTML>
-<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+
 <head>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <TITLE>Fitness Center Reps</TITLE>
 <link rel="stylesheet" type="text/css" href="stil.css">
@@ -9,18 +10,30 @@
 <BODY>
 	<div id="zaglavlje">
 		
-		<img src="Repslogo2.jpg" alt="Fitness Center Reps logo">
+		<img src="Repslogo2.jpg" alt="Fitness Center Reps logo" id="logo">
 		Reps
 	</div>
 	
+	
 		<ul id="navigacija">
-			<li><a id="link" href="index.html">Home</a></li>
-			<li><a href="O nama.html">O nama</a></li>
+			<li><a href="index.html">Home</a></li>
+			
+			<li onmouseover="otvori('m1')" onmouseout="zatvori('m1');"><a href="Onama.html" >O&nbsp;nama</a>
+				<div id="m1" onmouseout="zatvori('m1')">
+					<a href="Galerija.html">Galerija</a>
+				</div>	
+			</li>
 			<li><a href="Ponuda.html">Ponuda</a></li>
-			<li><a href="Savjeti.html">Savjeti</a></li>
+			<li onmouseover="otvori('m2')" onmouseout="zatvori('m2');"><a href="Savjeti.html">Savjeti</a>
+			<div id="m2" onmouseout="zatvori('m2')">
+					<a href="#">Ishrana</a>
+					<a href="#">Trening</a>
+					<a href="#">Suplementi</a>
+				</div>	
+			</li>
 			<li><a href="Linkovi.html">Linkovi</a></li>
 			<li><a href="Kontakt.html">Kontakt</a></li>
-		</ul>
+		</ul>	
 		
 		<h3>Novosti</h3>
 		
@@ -32,7 +45,7 @@
 		<div class="novost">
 		<img src="gym.jpg" alt="teg slika" />
 		Sed laborum fashion axe accusamus. Voluptate cold-pressed ennui consectetur. 
-		Cillum pariatur single-origin coffee, roof party non exercitation small batch beard letterpress leggings. Try-hard veniam PBR&B, labore jean shorts distillery commodo kitsch single-origin coffee brunch dreamcatcher whatever officia. Cred yr 8-bit, placeat food truck nihil tofu Kickstarter eu pork belly gluten-free iPhone VHS adipisicing fixie. 
+		Cillum pariatur single-origin coffee, roof party non exercitation small batch beard letterpress leggings. Try-hard veniam PBRB, labore jean shorts distillery commodo kitsch single-origin coffee brunch dreamcatcher whatever officia. Cred yr 8-bit, placeat food truck nihil tofu Kickstarter eu pork belly gluten-free iPhone VHS adipisicing fixie. 
 		Do Pinterest cillum health goth. Neutra four dollar toast pickled et elit cardigan.
 		<a href="index.html" class="detalji">Detaljnije...</a></div>
 		
@@ -42,12 +55,13 @@
 		<div class="novost">
 		<img src="gym1.jpg" alt="teg slika" />
 		Sed laborum fashion axe accusamus. Voluptate cold-pressed ennui consectetur. 
-		Cillum pariatur single-origin coffee, roof party non exercitation small batch beard letterpress leggings. Try-hard veniam PBR&B, labore jean shorts distillery commodo kitsch single-origin coffee brunch dreamcatcher whatever officia. Cred yr 8-bit, placeat food truck nihil tofu Kickstarter eu pork belly gluten-free iPhone VHS adipisicing fixie. 
+		Cillum pariatur single-origin coffee, roof party non exercitation small batch beard letterpress leggings. Try-hard veniam PBRB, labore jean shorts distillery commodo kitsch single-origin coffee brunch dreamcatcher whatever officia. Cred yr 8-bit, placeat food truck nihil tofu Kickstarter eu pork belly gluten-free iPhone VHS adipisicing fixie. 
 		Do Pinterest cillum health goth. Neutra four dollar toast pickled et elit cardigan.
 		<a href="index.html" class="detalji">Detaljnije...</a></div>
 		
 		</div>
 	
 	<div id="podnozje"><p>Made in China...Err made by Emir Hurem</p></div>
+	<script src="skripta.js"></script>
 </BODY>
 </HTML>
