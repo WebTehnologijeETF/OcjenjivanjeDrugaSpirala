@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <TITLE>EliTech | Registracija</TITLE>
+        <link rel="stylesheet" type="text/css" href="stil5.css">
+</head>
+
+<body>
+
+<div id="page">
+    <div id="header">
+        <a href = "naslovnica.html"><img src="slike/logo.png" alt="logo_pic"></a>
+    		<ul class="nav_left">
+                <li><a href = "naslovnica.html">Naslovnica</a></li>
+                <li id = "zapr" class = "opens_menu">Katalog
+                    <ul id="meni_katalog">
+                        <li class = "menu_item_katalog"><a href = "katalog.html">Laptopi</a></li>
+                        <li class = "menu_item_katalog">Televizori</li>
+                        <li class = "menu_item_katalog">Mobiteli</li>
+                        <li class = "menu_item_katalog">Tableti</li>
+                    </ul>
+                </li>
+                <li><a href = "partneri.html">Partneri</a></li>
+                <li><a href = "kontakt.html">Kontakt</a></li>
+            </ul>
+            <ul class="nav_right">
+                <li id="act"><a href = "registracija.html">Registracija</a></li>
+                <li><a href = "prijava.html">Prijava</a></li> 
+            </ul>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+        	<h3 id="form_heading">Registrujte se!</h3>
+            <form id = "sign_up_form">
+                <div id = "sup_d1">
+                    <label for="ime">Ime*:</label>
+                    <input id="ime" type="text" name="ime_in">
+                    <img class = "greska_icon" id ="greska_ime" src = "slike/greska.png" alt = "greska_pic">
+                    <p class = "greska_tekst" id ="greska_tekst_ime">Mogu biti samo slova!</p>
+                </div>
+                <div id = "sup_d2">
+                    <label for="prezime">Prezime*:</label>
+                    <input id="prezime" type="text" name="prezime_in">
+                    <img class = "greska_icon" id ="greska_prezime" src = "slike/greska.png" alt = "greska_pic">
+                    <p class = "greska_tekst" id ="greska_tekst_prezime">Mogu biti samo slova!</p>
+                </div>
+                <div id = "sup_d3">
+                    <label for="mail">E-mail*:</label>
+                    <input id="mail" type="text" name="mail_in">
+                    <img class = "greska_icon" id ="greska_mail" src = "slike/greska.png" alt = "greska_pic">
+                    <p class = "greska_tekst" id ="greska_tekst_mail">Netačan format!</p>
+                </div>
+                <div id = "sup_d4">
+                    <label for="pass">Šifra*:</label>
+                    <input id="pass" type="password" name="pass_in">
+                    <img class = "greska_icon" id ="greska_pass" src = "slike/greska.png" alt = "greska_pic">
+                    <p class = "greska_tekst" id ="greska_tekst_pass">Minimalno 6 karaktera!</p>
+                </div>
+                <div id = "sup_d5">
+                    <label for="conf_pass">Potvrdite šifru*:</label>
+                    <input id="conf_pass" type="password" name="pass_conf_in">
+                    <img class = "greska_icon" id ="greska_conf_pass" src = "slike/greska.png" alt = "greska_pic">
+                    <p class = "greska_tekst" id ="greska_tekst_conf_pass">Šifre nisu iste!</p>
+                </div>
+                <div id = "sup_d7">
+                    <label for="grad">Grad stanovanja:</label>
+                    <input id="grad" type="text" name="grad_in">
+                </div>
+                <div id = "sup_d8">
+                    <label for="br_tel">Broj telefona:</label>
+                    <input id="br_tel" type="text" name="tel_in">
+                </div>
+                <div id = "sup_d6">
+                    <label></label>
+                    <input id ="sup_sbmt" type="submit" onclick = "return provjeriFormu()" value="Registruj se">
+                </div>
+            </form>
+            <br>
+            <br>
+            <h6>*Obavezna polja</h6>
+        </div>
+    </div>
+</div>
+    
+<div id="footer">
+	<div class = "b_cont">
+            <p id ="top">Pratite nas na društvenim mrežama</p>
+            <ul class = "sn_icons">
+                <li><a href="#"><img src="slike/facebook_r.png" alt="fb logo"></a></li>
+                <li><a href="#"><img src="slike/twitter_r.png"  alt="tw logo"></a></li>
+                <li><a href="#"><img src="slike/google_r.png"  alt="gp logo"></a></li>
+            </ul>
+            <p>Copyright &copy; 2015. EliTech d.o.o.</p>
+    </div>
+</div>
+<script src = "skripta5.js"></script>
+</body>
+</html>

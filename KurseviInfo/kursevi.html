@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KurseviInfo - Kursevi</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="okvir">
+		<div id="zaglavlje">
+			<div id="logo">
+				<a href="index.html">KurseviInfo</a>
+				<img src="images/logo.png" alt=""/>
+			</div>
+			<div id="meni">
+				<ul>
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="kursevi.html">Kursevi</a></li>
+					<li><a href="dodaj.html">Dodaj kurs</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="sadrzaj">
+			<div id="pretraga">
+				<form id="forma_pretraga">
+					<table>
+						<tr><th>Pretraga</th></tr>
+						<tr><td>Kategorija:</td></tr>
+						<tr><td>
+							<select>
+							  <option value="jezici">Jezici</option>
+							  <option value="informatika">Informatika</option>
+							  <option value="ekonomija">Ekonomija</option>
+							  <option value="matematika">Matematika</option>
+							</select></td></tr>
+						<tr><td>Grad:</td></tr>
+						<tr><td>
+							<select>
+							  <option value="sarajevo">Sarajevo</option>
+							  <option value="bihac">Bihać</option>
+							  <option value="mostar">Mostar</option>
+							  <option value="jajce">Jajce</option>
+							</select></td></tr>
+						<tr><td>Cijena:</td></tr>
+						<tr><td>Od:<input class="cijena_input" type="text" name="najmanjaCijena"> Do:<input class="cijena_input" type="text" name="najvecaCijena"></td></tr>
+						<tr><td id="trazi"><input id="submit" type="submit" value="Traži"></td></tr>
+					</table>
+				</form>
+			</div>
+			<div id="kursevi_naslovna">
+				<div class="kurs">
+					<p><img src="images/biblioteka.jpg" class="slika_kursa" alt="">
+					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p><a href="detaljno.html" class="naziv_kursa">Poslovni Engleski prvi stepen</a>
+					</div>
+					<div class="datum_trajanje">
+					<p class="datum_kursa">27.3.2015</p><p class="trajanje">4 sedmice</p>
+					</div>
+				</div>
+				<div class="kurs">
+					<p><img src="images/biblioteka.jpg" class="slika_kursa" alt="">
+					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p><a href="detaljno.html"  class="naziv_kursa">Naziv</a>
+					</div>
+					<div class="datum_trajanje">
+					<p class="datum_kursa">27.3.2015</p><p class="trajanje">4 sedmice</p>
+					</div>
+				</div>
+				<div class="kurs">
+					<p><img src="images/biblioteka.jpg" class="slika_kursa" alt="">
+					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p><a href="detaljno.html" class="naziv_kursa">Naziv</a>
+					</div>
+					<div class="datum_trajanje">
+					<p class="datum_kursa">27.3.2015</p><p class="trajanje">4 sedmice</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="kraj">
+			<p>Razvio: Babić Mirhat - Predmet Web tehnologije - 2015</p>
+		</div>
+	</div>
+</body>
+</html>

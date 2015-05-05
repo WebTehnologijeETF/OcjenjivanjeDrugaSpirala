@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Event planning</title>
+	<link rel="stylesheet" type="text/css" href="css/zadaca1.css">
+	<link rel="shortcut icon" href="photos/logo.ico">
+</head>
+
+<body onload="SakrijSubmenu()">
+	<header class="logo">
+		<img src="photos/logo.png" class="logo-image" alt="logo">
+		<a href="naslovnica.html" class="logo-text">PlanAid</a>
+	</header>
+	
+	<nav class="menu">
+		<a onmouseenter="PrikaziNaslovnicu()">Naslovnica</a>
+		<a onmouseenter="PrikaziDesavanja()">Dešavanja</a>
+		<a onmouseenter="PrikaziLokacije()">Lokacije</a>
+		<a onmouseenter="PrikaziPrijavu()">Prijava</a>
+		<a href="kontakt.html" onmouseenter="SakrijSubmenu()">Kontakt</a>
+	</nav>
+
+<div id="stranica">
+	<div id="submenu_naslovnica" class="submenu_invisible">
+		<a href="naslovnica.html" onclick="PrikaziVijesti('nove_vijesti.html')">Najnovije vijesti</a>
+		<a href="naslovnica.html" onclick="PrikaziVijesti('najcitanije_vijesti.html')">Najčitanije vijesti</a>
+		<a href="naslovnica.html" onclick="PrikaziVijesti('novosti.html')">Sve vijesti</a>
+	</div>
+
+	<div id="submenu_desavanja" class="submenu_invisible">
+		<a href="tabela.html">Pregled kalendara</a>
+		<a href="novi_event.html">Novo dešavanje</a>
+		<a href="moji_eventi.html">Moja dešavanja</a>
+	</div>
+
+	<div id="submenu_lokacije" class="submenu_invisible">
+		<a href="linkovi.html">Sarajevo</a>
+		<a href="linkovi_zenica.html">Zenica</a>
+		<a href="linkovi_mostar.html">Mostar</a>
+	</div>
+
+	<div id="submenu_prijava" class="submenu_invisible">
+		<a href="login.html">Login</a>
+		<a href="registracija.html">Registracija</a>
+	</div>
+	
+	<section class="glavni">
+		<form>
+			Imate neko pitanje? Kontaktirajte nas!<br><br>
+			<div>
+				Ime:<br>
+				<input type="text" name="ime" id="ime" onblur="ValidirajIme()"><img src="photos/exclamation_point.png" id="uzvicnik_ime" class="uzvicnik_invisible">
+				<span id="tekst_ime" class="tekst_invisible">Isključivo slova</span>
+			</div><br>
+			<div>
+				Prezime:<br>
+				<input type="text" name="prezime" id="prezime" onblur="ValidirajPrezime()"><img src="photos/exclamation_point.png" id="uzvicnik_prezime" class="uzvicnik_invisible">
+				<span id="tekst_prezime" class="tekst_invisible">Isključivo slova</span>
+			</div><br>
+			<div>
+				E-mail:<br>
+  				<input type="email" name="email" id="email" onblur="ValidirajEmail()"><img src="photos/exclamation_point.png" id="uzvicnik_email" class="uzvicnik_invisible">
+  				<span id="tekst_email" class="tekst_invisible">Niste unijeli e-mail</span>
+  			</div><br>
+  			<div>
+  				URL (ovo je <mark>opcionalno</mark>):<br>
+  				<input type="url" name="url" id="url">
+  			</div><br>
+  			<div>
+			Poruka:<br>
+				<textarea class="poruka" name="poruka" rows="8" cols="1" id="poruka" onblur="ValidirajPoruku()"></textarea><img src="photos/exclamation_point.png" id="uzvicnik_poruka" class="uzvicnik_poruka_invisible">
+				<span id="tekst_poruka" class="tekst_poruka_invisible">Morate unijeti poruku</span>
+			</div>
+			<br>
+			<input type="submit" value="Pošalji" name="submit" id="submit" onclick="return ValidirajKontakt()">
+		</form>
+	</section>
+</div>
+	<script src="javascript/validacija.js"></script>
+	<script src="javascript/menu.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,80 @@
+	<!DOCTYPE html>
+
+	<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Apartmani Dino</title>
+	<link rel="stylesheet" type="text/css" href="css/stil.css">
+	</head>
+
+	<body id="tijelo">
+
+	<div id="pozadina"></div> 
+
+	<div id="container">
+	<div id="navbar">
+
+	<header>
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="accommodation.html">Accommodation</a></li>
+	   <li onmouseover="showMenu()" onmouseout="hideMenu()"><a href="gallery.html" >Gallery</a>
+			<ul id="submenu" onmouseover="showMenu()" >
+				<li><a href="#">Orebic</a></li>
+				<li><a href="#">Apartments</a></li>
+			</ul>
+			</li>
+	  <li><a id="contactlink" href="contact.html">Contact</a></li>
+	  <li><a href="links.html">Links</a></li>
+	</ul>
+	</header>
+
+	</div>
+
+		<div id="banner">
+	<a id="linklogo" href="index.html"> <img id="logo" src="Images/slikalogo.png" alt="Logo" ></a>
+	</div>
+
+
+
+	<h1> Contact Us</h1>
+	<hr id="linija1"/>
+	<div id="sadrzaj">
+	
+	<form id="formakontakta">
+	
+	<label for="unosime"> First name:*</label>
+	<input class="unos" onchange="odobriIme()" id="unosime" type="text" name="ime" placeholder="First name" title="Field is required."><div id="errorime"></div>
+	
+	<label for="prezime"> Last name:</label>
+	<input class="unos" type="text" id="prezime" name="prezime" placeholder="Last name" title="Field is optional."><div id="errorprezime"></div>
+	
+	<label for="mejl"> E-mail:*</label>
+  	<input class="unos" id="mejl" onchange="odobriMail()" onmouseout="odobri()" type="email" name="email" placeholder="mail@example.com" title="Field is required."><div id="errormail"> </div>
+	
+	<label for="unosteksta" id="porukalabela">Write a message to us:</label>
+	<textarea id="unosteksta" name="poruka" rows="8" cols="1" placeholder="Please enter the name and e-mail correctly to type here..."></textarea><div id="errortekst"> </div>
+	
+	<input id="sabmit" onClick="return validiraj()" type="submit" value="Submit">
+	<input id="reset" onclick="resetsve()" type="reset" value="Reset">
+	</form>
+	
+	</div>
+	
+	
+	
+	<div id="navbardole">
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="accommodation.html">Accommodation</a></li>
+	  <li><a href="gallery.html">Gallery</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+	  <li><a href="links.html">Links</a></li>
+	</ul>
+	</div>
+	<footer> Copyleft &copy; by Dino Hurem.</footer>
+	</div>
+	<script src="skripta.js"> </script>
+	</body>
+
+	</html>

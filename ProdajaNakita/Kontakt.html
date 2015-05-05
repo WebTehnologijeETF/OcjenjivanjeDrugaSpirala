@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<SCRIPT src="ValidacijaKontaktForme.js"></SCRIPT>
+<TITLE>Prodaja nakita Sarajevo</TITLE>
+<link rel="stylesheet" type="text/css" href="stilnaslovna.css">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+</HEAD>
+<BODY >
+
+
+<div id="okvir">
+
+
+	<div id="zaglavlje">
+	<h3>  Kontakt  </h3>
+		<div class="logo"></div>
+	
+	</div>
+	<div id="meni">
+		
+		<table class="gridtable" style="width:100%">
+  <tr>
+ <td><a href="Naslovna.html">Naslovna</a></td>	
+<td><a href="Kategorije.html">Kategorije</a></td>		
+    <td><a href="Onama.html">O nama</a></td>
+  </tr>
+</table>
+
+	</div>
+	
+<div id="glavni">
+<div class="Kontaktpodaci">	
+<p>Možete nas pronaći na slijedećim stranicama:</p>
+	
+
+<table class="tabeleposlovnica" style="width:100%">
+  <tr>
+ <th>Adresa</th>
+<th>Telefon</th> 
+ <th>E-mail</th>
+ <tr>
+    <td>Zmaja od Bosne 12b</td>
+    <td>033/238-987</td>
+	<td><a href="#">www.nakitsarajevo1@gmail.com<a></td>
+  </tr>
+  <tr>
+    <td>Dzemala Bijedica 17</td>
+    <td>033/987-654</td>
+	<td><a href="#">www.nakitsarajevo2@gmail.com<a></td>
+  </tr>
+  <tr>
+    <td>Kulovića 3</td>
+    <td>033/977-657</td>
+	<td><a href="#">www.nakitsarajevo3@gmail.com<a></td>
+  </tr>
+  <tr>
+    <td>Branilaca Sarajeva 7b</td>
+    <td>033/987-458</td>
+	<td><a href="#">www.nakitsarajevo4@gmail.com<a></td>
+  </tr>
+  <tr>
+    <td>Logavina 3</td>
+    <td>033/223-985</td>
+	<td><a href="#">www.nakitsarajevo5@gmail.com<a></td>
+  </tr>
+
+  <ul class="mojilinkovi">
+  <li><a href="www.facebook.com">Facebook</a></li>
+    <li><a href="www.twitter.com">Twitter</a></li>
+ 
+</ul>
+
+</table>
+
+
+	</div>
+	
+
+
+<form >
+<div class="form-group">
+            <label for="contact-name">Ime i prezime</label>
+            <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Vaše ime i prezime.." onkeyup='validateName()'>
+            <span class='error-message' id='name-error'></span>
+          </div>
+          
+<div class="form-group">
+            <label for="contact-email">Email addresa</label>
+            <input type="email" class="form-control" id="contact-email" name="email" placeholder=" Email" onkeyup='validateEmail()'>
+            <span class='error-message' id='email-error'></span>
+          </div>   
+
+<div class="form-group">
+            <label for="contact-phone">Telefon</label>
+            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="033223985" onkeyup='validatePhone()'>
+            <span class='error-message' id='phone-error'></span>
+          </div>
+   <div class="form-group">
+            <label for='contactMessage'>Komentar ili primjedba</label>
+            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Ukucajte pitanje/poruku" onkeyup='validateMessage()'></textarea>
+            <span class='error-message' id='message-error'></span>
+          </div>
+		  
+<button onclick='return validateForm()' class="btn btn-default">Submit</button>
+        <span class='error-message' id='submit-error'></span>
+      </form>
+
+	
+
+
+</div>
+
+	<div id="podnozje"><p>Copyright &copy; Web tehnologije/Irma Solaković 2014/2015.</p></div>
+</div>
+</BODY>
+</HTML>

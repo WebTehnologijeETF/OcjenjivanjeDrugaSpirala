@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>I&amp;&Beta;</title>
+<link rel="stylesheet" type="text/css" href="stil.css">
+<script src="MuskarciStablo.js" type=""></script>
+</head>
+<body onload="Zatvori()">
+<div id="Traka">
+<ul>
+	<li id="Inicijali" class="Zajednicko">I&amp;&Beta;</li>
+	<li id="Informacije" class="Zajednicko"> <a class="MenuLink"href="projekat_naslovna.html">O nama</a></li>
+	<li id="Zene" class="Zajednicko"><a class="MenuLink" href="zene.html">Žene</a></li>
+	<li id="Muskarci" class="Zajednicko"><a class="MenuLink" href="muškarci.html">Muškarci</a></li>
+	<li id="Kontakt" class="Zajednicko"><a class="MenuLink" href="kontakt.html">Kontakt</a></li>
+	<li id="Dobavljaci" class="Zajednicko"><a class="MenuLink" href="dobavljaci.html">Dobavljači</a></li>
+</ul>
+</div>
+<div id="MuskarciOdjel">
+	<div id="NovostiMuskarci"><p>Novo!!</p></div>
+	<ul class="MuskarciOdjeca">
+		<li > <img  class="MuskarciLista" id="SlikaNestaniM" alt=""onClick="KlikNaMuskarce()"src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-16.png"><a href="#" class="Stablo">Muškarci</a></li>
+		<li>
+		<ul id="ListaMuskarci">
+		<li > <img  class="MuskarciLista" id="SlikaNestaniMMajice" alt=""onClick="KlikNaMajice()"src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Majice</a></li>
+		<li>
+		<ul id="ListaMajiceMuskarci" >
+			<li class="MuskarciLista"><a href="" class="Stablo">Dugi rukav</a></li>
+			<li class="MuskarciLista"><a href=""class="Stablo">Kratki rukav</a></li>
+		</ul>
+	</li>
+		<li><img  class="MuskarciLista"  onClick="KlikNaKosulje()" id="SlikaNestaniMKosulje" alt="" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Košulje</a></li>
+		<li>
+		<ul id="ListaKosulja">
+			<li class="MuskarciLista"><a href="" class="Stablo">Dugi rukav</a></li>
+			<li class="MuskarciLista"><a href="" class="Stablo">Kratki rukav</a></li>
+		</ul>
+	</li>
+		<li ><img class="MuskarciLista"  onClick="KlikNaPoluvere()" id="SlikaNestaniMPoluveri" alt="" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Poluveri</a></li>
+		<li>
+		<ul  id="ListaPoluveriMuskarci">
+			<li class="MuskarciLista"><a href="" class="Stablo">Na raskopčavanje</a></li>
+			<li class="MuskarciLista"><a href="" class="Stablo">Bez raskopćavanja</a></li>
+		</ul>
+	</li>
+		<li ><img class="MuskarciLista"  onClick="KlikNaJakneKaputeM()" id="SlikaNestaniMJakneKaputi" alt="" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Jakne i kaputi</a></li>
+		<li>
+		<ul id="ListaJakniKaputaMuskarci">
+			<li ><img class="MuskarciLista"  onClick="KlikNaJakneM()" id="SlikaNestaniMJakne"alt="" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Jakne</a></li>
+			<li>
+			<ul id="ListaJakniMuskarci">
+				<li class="MuskarciLista"><a href="" class="Stablo">Kožne</a></li>
+				<li class="MuskarciLista"><a href="" class="Stablo">Ostale</a></li>
+			</ul>
+		</li>
+			<li ><img class="MuskarciLista"  onClick="KlikNaKaputeM()" id="SlikaNestaniMKaputi"alt="" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Kaputi</a></li>
+			<li>
+			<ul id="ListaKaputaMuskarci">
+				<li class="MuskarciLista"><a href="" class="Stablo">Kratki</a></li>
+				<li class="MuskarciLista"><a href="" class="Stablo">Dugi</a></li>
+			</ul>
+		</li>
+		</ul>
+		<li ><img class="MuskarciLista"  onClick="KlikNaHlace()" alt="" id="SlikaNestaniMHlace" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Hlače</a></li>
+		<li>
+		<ul id="ListaHlacaMuskarci">
+			<li class="MuskarciLista"><a href="" class="Stablo">Slim</a></li>
+			<li class="MuskarciLista"><a href="" class="Stablo">Skinny</a></li>
+			<li class="MuskarciLista"><a href="" class="Stablo">Regular</a></li>
+		</ul>
+	</li>
+		<li ><img class="MuskarciLista"  onClick="KlikNaSorceve()" alt="" id="SlikaNestaniMSorcevi" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Šorcevi</a></li>
+		<li>
+		<ul id="ListaSorcevaMuskarci">
+			<li class="MuskarciLista"><a href="" class="Stablo">Iznad koljena</a></li>
+			<li class="MuskarciLista"><a href="" class="Stablo">Trofrtajni</a></li>
+		</ul>
+	</li>
+		<li ><img class="MuskarciLista"  onClick="KlikNaDonjeRubljeMuskarci()" id="SlikaNestaniMDonjeRublje" alt="" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="#" class="Stablo">Donje rublje</a></li>
+		<li>
+		<ul id="ListaDonjeRubljeMuskarci" >
+			<li ><img class="MuskarciLista"  onClick="KlikNaGace()" alt="" id="SlikaNestaniMGace" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="" class="Stablo">Gaće</a></li>
+			<li>
+			<ul id="ListaGacaMuskarci">
+				<li class="MuskarciLista"><a href=""class="Stablo">Bokserice</a></li>
+				<li class="MuskarciLista"><a href=""class="Stablo">Regularne gaće</a></li>
+			</ul>
+		</li>
+			<li class="MuskarciLista"><a href=""class="Stablo">Potkušulje</a></li>
+		</ul>
+	</li>
+		<li ><img class="MuskarciLista"  onClick="KlikNaKupace()" alt="" id="SlikaNestaniMKupace" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png"><a href="" class="Stablo">Kupaći kostimi</a></li>
+		<li>
+		<ul id="ListaKupacihMuskarci">
+			<li class="MuskarciLista"><a href=""class="Stablo">Kupaće gaće</a></li>
+			<li class="MuskarciLista"><a href=""class="Stablo">Kupaći bokserice</a></li>
+		</ul>
+	</li>
+</ul>
+</li>
+	</ul>
+</div>
+<img alt="" src="http://static.bershka.net/4/photos/2015/V/0/2/p/1303/109/732/1303109732_1_1_1.jpg?timestamp=1420720061516" class="SlikaMuskaracNaslovna">
+
+</body>
+</html>

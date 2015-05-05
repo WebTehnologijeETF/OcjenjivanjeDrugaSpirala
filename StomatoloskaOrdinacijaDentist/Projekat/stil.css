@@ -1,0 +1,345 @@
+body {
+     background-color: #F5F9FC;
+    
+ 
+}
+
+#okvir{
+ background-color: white;
+    width: 960px;
+   margin-right: auto;
+    margin-left: auto; 
+    border:4px solid #E3F0F9;
+    font-family: 'Arial';
+    padding-bottom: 2px;
+   
+}
+
+#zaglavlje {
+    color: Blue;
+     background-color: #E8EAF7;
+     height: 281px; 
+     border-radius: 5px;
+}
+#naziv{
+   font-size: 46px;
+   position: relative; top:-220px; left: 125px;
+  font-family: 'Orbitron', sans-serif;
+  color: #22ADE7;
+  font-weight: bold;
+}
+#ordinacija{
+    font-size: 28px;
+   position: relative; top:-240px; left: 40px;
+  font-family: 'Orbitron', sans-serif;
+  color: #22ADE7;  
+}
+
+#zaglavlje.header{
+    width: 980px;
+    margin: 0 auto;
+}
+
+#meni{
+    height: 60px;
+    
+    width: 935px;
+    padding-left:25px;
+    background-color: #E3F0F9;
+}
+#meni ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+#meni ul li a {
+    text-decoration:none;
+    float:left;
+    margin-right:3px;
+    color: black;
+   border-bottom: none;
+    padding: 15px 20px 15px 20px;
+ 
+    width: 100px;
+    height: 23px;
+    text-align: center;
+    display: block;
+   background:  #D7DDE9;  
+   border-radius: 5px;
+   position: relative;
+   
+}
+
+#meni ul li a:hover {
+    background-color:#24ABE6;
+    color: white;
+}
+
+#meni ul li a#onlink{
+    background-color: white;
+    color: black;
+    
+}
+
+#meni ul li a#onlink:hover{
+    background-color:white;
+    color: black;
+}
+#novosti{
+      width: 640px;
+   
+}
+.post{ margin: 0 auto;
+     
+    background-color: white;
+   border-bottom:4px solid #E3F0F9;
+   border-right:3px solid #E3F0F9;
+   width: 606px;
+    border-top:  none;
+     padding: 20px;
+    float: left;  
+}
+.slika{
+    float: left;
+    padding: 10px;
+    
+}
+.Naslov{
+    
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+     font-weight: bold;
+}
+.Naslov:hover {
+    color: #22ADE7; 
+}
+.Autor{
+    color: #d6d2d2;
+    font-size: 12px;
+    text-align: left;
+}
+.Datum{
+ color: #d6d2d2;
+    font-size: 12px;
+    text-align: right;
+}
+.Sadrzaj{
+    text-align: left;
+}
+.Tekst{
+    float: right;
+    width: 400px;
+}
+.Detaljnije{
+    text-decoration: none;
+     color: #22ADE7; 
+      float: right;
+}
+.Detaljnije:hover {
+      font-weight: bold;
+      text-decoration: underline;
+      
+}
+#glavni{
+    background-color: white;
+ 
+}
+
+#saStrane{
+    width: 291px;
+    background-color: white; 
+    float: right;
+    padding: 10px;   
+    border-left: 3px solid #E3F0F9;
+}
+#Informacije{
+    color: #22ADE7; 
+    margin-left: 90px;
+}
+.slikaReklama{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.Reklama, .PartneriText{
+    padding: 15px;
+    color: #808080;
+    text-align: center;
+}
+
+#footer{
+   
+   clear: both;
+   
+  padding:30px;
+    background-color: #E3F0F9;
+    text-align: center;
+}
+#partneri {
+    background-color: white;
+     padding: 30px;
+    float: left;  
+    width: 586px;
+     border-right: 4px solid #E3F0F9;
+    
+}
+.PartneriText{
+     text-align: left;
+     padding: 0px;
+      font-size: 18px;
+}
+#listaPartnera{
+    text-decoration: none;
+    list-style-image: url(bullet.jpg);  
+}
+#listaPartnera li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+   
+}
+#listaPartnera li a {
+    text-decoration: none;
+    color: #22ADE7;
+  font-size: 30px;
+}
+
+#listaPartnera li a:hover {
+      font-weight: bold;
+      text-decoration: underline;
+}
+
+#cjenovnik{
+    background-color: white;
+     padding: 30px;
+    float: left;  
+     border-right: 4px solid #E3F0F9;
+     width: 586px;
+    
+    
+}
+.red{
+    background-color: #d6d2d2;
+    
+    }
+.red2 {
+    background-color: #E3F0F9;
+    color: #808080;
+   
+}
+.celija {
+    width: 400px;
+    height: 25px;
+    padding-left: 5px;
+}
+.celijaZaglavlje{
+   text-align: center;
+    height: 25px; 
+    background-color:#E3F0F9; 
+    color: black;
+}
+.kontakt{
+    width: 450px;
+  }
+#DivKontakti{
+   background-color: white;
+     padding: 30px;
+    float: left;  
+    width: 586px;
+     border-right: 3px solid #E3F0F9;}
+#forma {
+      margin:15px 15px 0px 15px;
+      padding: 15px 15px 0px 15px;
+      background-color: #D7DDE9;
+      width: 550px;
+      border-radius: 5px;
+      text-align: right;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+        margin-bottom: 40px;
+        
+}
+
+label{
+    float: left;
+    
+    width: 125px;
+    padding-right: 15px;
+    margin-top: 15px;
+    text-align: right;
+    clear: left;
+    
+}
+label.Spol{
+    float: left;
+   width: 130px; 
+   margin-bottom: 5px;
+}
+
+#DivSpol{
+   border: 2px solid white;
+    float:right;
+  text-align: center;
+  padding: 2px;
+  width: 255px;
+}
+
+textarea{
+    height: 150px;
+}
+input, textarea {
+    margin-top: 15px;
+    width: 250px;
+    
+}
+
+input.Button{
+    width:80px;
+    margin:15px 0px 15px 15px; 
+    
+}
+input.Radio{
+    width:20px;
+    margin-top:19px;
+    float: left;
+}
+
+#onama{
+    
+    background-color: white;
+     padding: 30px;
+    float: left;  
+    width: 586px;
+     border-right: 3px solid #E3F0F9;
+}
+.SlikaOrdinacija{
+    width: 600px;
+}
+.onamaTekst{
+    line-height:25px;
+    color: #808080;
+    font-size: 18px;
+    width: 556px;
+}
+
+
+
+
+.meni2 {width: 100px;
+
+     position: relative; top:0px; left: 572px;
+}
+
+.meni2 li a {
+    text-decoration: none;
+    color:black;
+}
+#padajuciMeni{
+    margin-top:30px;
+   display: none
+    
+}
+  
+

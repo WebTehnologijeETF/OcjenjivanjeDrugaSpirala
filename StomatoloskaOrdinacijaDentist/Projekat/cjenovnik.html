@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Stomatoloska ordinacija</title>
+<link rel="stylesheet" type="text/css" href="stil.css">
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+    <script src="meni.js"></script>
+</head>
+<body>       
+<div id="okvir"> <!--otvoren div okvir-->    
+<div id="zaglavlje"><!--otvoren div zaglavlje-->   
+<img class="header" src="slike_dentist/header.jpg" alt="Novi logo" />
+<h1 id="naziv">D E N T I S T</h1>
+<h3 id="ordinacija">Stomatološka ordinacija</h3>
+</div><!--zatvoren div zaglavlje--> 
+<div id="meni"><!--otvoren div meni--> 
+<ul>
+<li><a href="pocetna.html" >Novosti</a></li>
+    <li><a href="onama.html">O nama</a></li>
+    <li><a href="cjenovnik.html" id="onlink">Cjenovnik</a></li>
+<li><a href="kontakt.html" >Kontakt</a></li>
+
+  <li><a  href="#" onmouseover="prikaziMeni()"   onmouseout="sakrijMeni()" >Usluge</a></li> 
+    <li><a href="partneri.html" >Partneri</a></li>
+</ul>
+<ul id="padajuciMeni" class="meni2" onmouseout="sakrijMeni()" >
+      
+                <li onmouseover="prikaziMeni()"><a  href="protetika.html">Protetika</a></li>
+                <li onmouseover="prikaziMeni()"><a href="estomatologija.html">Estetika stomatologija</a></li>
+               
+            </ul>
+</div><!--zatvoren div meni-->
+<div id="glavni"><!--otvorene div glavniDio--> 
+<div id="saStrane">
+      <p id="Informacije">Adresa: <br> 
+        Titova 5, 71000 
+           Sarajevo  <br>  <br> 
+          Telefon: <br> 
+          +387 33 472 262 <br>
+           +387 33 376 652 <br> <br> 
+          Radno vrijeme:
+<br>  Pon – Pet 09 – 17h<br>
+Sub 09 – 14h <br>  </p>
+    <img class="slikaReklama" src="slike_dentist/garancija.jpg" alt="slika"/>
+      <p class="Reklama">SVIM POTENCIJALNIM PACIJENTIMA NUDIMO BESPLATAN PREGLED I KONSULTACIJE UZ BEZBOLNU TERAPIJU PRI ZAHVATU.
+BUDITE SLOBODNI DA NAS KONTAKTIRATE <br> <br> MOGUĆNOST PLAĆANJA NA 12 RATA!</p>
+                 </div>
+<div id="novosti"><!--otvorene div novosti--> 
+    <div id="cjenovnik">
+    <h1>Cjenovnik:</h1>
+
+        <p class="PartneriText"> -U navedene cijene uračunat je PDV. <br><br>
+-Plaćanje možete izvršiti gotovinski ili preko platnih kartica vaše poslovne banke <br><br>
+        -Popust ostvarujete ako ste bili naš pacijent više od 5 puta <br><br></p>
+       
+        <table>
+            <tr class="red2" > <td class="celijaZaglavlje" colspan="3" > KONZERVATIVNA STOMATOLOGIJA </td >  </tr> 
+        <tr class="red" >
+        <td class="celija" >
+            USLUGA
+        </td >
+            <td class="celija">
+               CIJENA
+            </td>
+            <td class="celija">
+                POPUST
+            </td>
+        </tr>
+
+            <tr class="red2" >
+        <td class="celija">
+            RTG snimak
+        </td >
+            <td class="celija">
+               10 KM
+            </td>
+            <td class="celija">
+                5%
+            </td>
+                </tr>
+                
+             <tr class="red" >
+        <td class="celija">
+            Jednopovršinska plomba
+        </td >
+            <td class="celija">
+               40 KM
+            </td>
+            <td class="celija">
+               10%
+            </td>
+        </tr>
+
+            <tr class="red2" >
+        <td class="celija">
+            Višepovršinska plomba
+        </td >
+            <td class="celija">
+               50 KM
+            </td>
+            <td class="celija">
+                10%
+            </td>
+                </tr>
+
+              <tr class="red" >
+        <td class="celija">
+            Indirektno prekrivanje pulpe
+        </td >
+            <td class="celija">
+               25 KM
+            </td>
+            <td class="celija">
+               5%
+            </td>
+        </tr>
+
+             <tr class="red2" >
+        <td class="celija">
+            Direktno prekrivanje pulpe
+        </td >
+            <td class="celija">
+               25 KM
+            </td>
+            <td class="celija">
+                5%
+            </td>
+                </tr>
+        </table>
+<br> <br>
+
+         <table>
+             <tr class="red2" > <td class="celijaZaglavlje" colspan="3" > DJEČIJA I PREVENTIVNA STOMATOLOGIJA </td >  </tr>
+        <tr class="red" >
+        <td class="celija">
+            USLUGA
+        </td >
+            <td class="celija">
+               CIJENA
+            </td>
+            <td class="celija">
+                POPUST
+            </td>
+        </tr>
+
+            <tr class="red2" >
+        <td class="celija">
+           Ekstrakcija (vađenje) mliječnih zuba
+        </td >
+            <td class="celija">
+               15 KM
+            </td>
+            <td class="celija">
+                5%
+            </td>
+                </tr>
+                
+             <tr class="red" >
+        <td class="celija">
+            Impregnacija zuba pastama (flourizacija)
+        </td >
+            <td class="celija">
+               20 KM
+            </td>
+            <td class="celija">
+               5%
+            </td>
+        </tr>
+
+            <tr class="red2" >
+        <td class="celija">
+            Uklanjanje mekih i čvrstih naslaga
+        </td >
+            <td class="celija">
+               40 KM
+            </td>
+            <td class="celija">
+                10%
+            </td>
+                </tr>
+
+              <tr class="red" >
+        <td class="celija">
+            Indirektno prekrivanje pulpe
+        </td >
+            <td class="celija">
+               25 KM
+            </td>
+            <td class="celija">
+               5%
+            </td>
+        </tr>
+
+             <tr class="red2" >
+        <td class="celija">
+           Air-flow
+        </td >
+            <td class="celija">
+               60 KM
+            </td>
+            <td class="celija">
+                15%
+            </td>
+                </tr>
+
+                <tr class="red" >
+        <td class="celija">
+           Zalijevanje fisura
+        </td >
+            <td class="celija">
+               20 KM
+            </td>
+            <td class="celija">
+                5%
+            </td>
+                </tr>
+        </table>
+
+       <br> <br>
+
+         <table> <tr class="red2" > <td class="celijaZaglavlje" colspan="3" > ORTODONCIJA</td >  </tr>
+        <tr class="red" >
+        <td class="celija">
+            USLUGA
+        </td >
+            <td class="celija">
+               CIJENA
+            </td>
+            <td class="celija">
+                POPUST
+            </td>
+        </tr>
+
+            <tr class="red2" >
+        <td class="celija">
+           Mobilni aparatić
+        </td >
+            <td class="celija">
+               300 KM
+            </td>
+            <td class="celija">
+                15%
+            </td>
+                </tr>
+                
+             <tr class="red" >
+        <td class="celija">
+            Fiksna proteza
+        </td >
+            <td class="celija">
+               1400 KM
+            </td>
+            <td class="celija">
+               15%
+            </td>
+        </tr>
+
+            <tr class="red2" >
+        <td class="celija">
+            Udlaga za bruksizam
+        </td >
+            <td class="celija">
+               100 KM
+            </td>
+            <td class="celija">
+                10%
+            </td>
+                </tr>
+
+              <tr class="red" >
+        <td class="celija">
+            Udlaga za bjeljenje zuba
+        </td >
+            <td class="celija">
+               75 KM
+            </td>
+            <td class="celija">
+               10%
+            </td>
+        </tr>
+
+            
+           
+        </table>
+
+        
+        </div >
+             </div><!--zatvoren div novosti-->
+   </div ><!--zatvoren div glavni-->
+    
+ <div id="footer">
+        Copyright 2015 Saudin d.o.o. Sva prava zadržana. Zabranjeno preuzimanje sadržaja bez dozvole izdavača
+        </div>
+    </div> <!--zatvoren div okvir-->
+    </body>
+</html>

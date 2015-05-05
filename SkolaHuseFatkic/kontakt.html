@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<!--<meta http-equiv="refresh" content=""/>-->
+<TITLE>Kontakt forma</TITLE>
+<link href="css/stil.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+</HEAD>
+<BODY> 
+
+	<div id="header">
+		<a href="index.html" class="logo"> 
+			<img src="slike/logo.png" alt="logo">
+		</a>
+		<div id="meni">
+			<ul>
+				
+				<li >
+					<a href="index.html">NASLOVNA</a>
+				</li>
+			  
+				<li >
+					<a href="oskoli.html">O šKOLI</a>
+				</li>
+				<li>
+					<a href="raspored.html">RASPORED</a>
+				</li>
+				 <li class="odabrano">
+					<a href="kontakt.html">KONTAKT</a>
+				</li>
+				<li>
+					<a href="#" id="Uposlenici" onclick="prikaziSakrij()"  >▼ UPOSLENICI</a>
+					<div id="uposleniciMeni" class="hidden" >
+							<a href="#">Profesori i nastavnici</a>
+							<a href="#">Menadžment škole</a>
+							<a href="#">Pedagoška služba</a>
+							<a href="#">Tehničko osoblje</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div id="tijelo">
+
+		<div id="lijevoTijelo">
+			<h3> Informacije</h3>
+			<p><b>Naziv škole:</b><br> Srednja škola "Huse Fatkić"</p>
+			<p><b>Adresa:</b><br> Zmaja od Bosne bb, 71000, Sarajevo</p>
+			<p><b>Telefon:</b><br> (+387)32665987</p>
+			<p><b>Telefon:</b><br> (+387)32665033</p>
+			<p><b>Email:</b><br> husefatkic@unsa.ba</p>
+
+		</div>
+				<div id="desnoTijelo">
+					<h3> Prijava</h3>
+				<div id="login">	
+					<form  name="loginForma"  method="post" onsubmit="return validateLogin()" >
+						Email: <input type="text" name="email" ><br>
+						Lozinka: <input type="text" name="lozinka" ><br>
+						<input type="submit" value="PRIJAVA" id="prijava"> 
+					</form>
+
+				</div>	
+				<h3> Registracija</h3>
+				<div id="registracija">	
+					<form  name="regForma">
+						Ime: <input type="text" name="ime" >
+						<p id="greskaIme"> </p>
+						Prezime: <input type="text" name="prezime" >
+						<p id="greskaPrezime"> </p>
+						Email: <input type="text" name="email" >
+						<p id="greskaEmail"> </p>
+						Lozinka: <input type="text" name="lozinka" >
+						<p id="greskaLozinka"> </p>
+						Broj mobitela(Neobavezno): <input type="text" name="mobitel" >
+						Spol: <select> 
+								  <option value="Musko">Muško</option>
+								  <option value="Zensko">Žensko</option>
+							   </select>
+						<input type="button" value="REGISTRACIJA" id="reg" onclick="return validateRegistration()"> 
+					</form>
+
+				</div>	
+					
+				</div>
+		<div class= "sadrzaj">
+			<h1> Kontaktirajte nas: </h1>
+				<div>
+					<table id="kontaktTabela">
+					<tr><td><p>Ime:</p></td><td><input type="text"></td></tr>
+					<tr><td><p>Prezime:</p></td><td><input type="text"></td></tr>
+					<tr><td><p>Adresa:</p></td><td><input type="text"></td></tr>
+					<tr><td><p>Email:</p></td><td><input type="email"></td></tr>
+					<tr><td><p>Spol:</p></td><td>
+					<form>
+						<input type="radio" name="spol" value="musko" checked>Muško
+						<br>
+						<input type="radio" name="spol" value="zensko">Žensko
+					</form>
+					</tr>
+					<tr><td><p>Poruka:</p></td><td><textarea name="text" id="PorukaZaSlanje"></textarea></td></tr>
+					
+					<tr><td><p></p></td><td><input type="button" value="POŠALJI" id="posaljiPoruku"></td></tr>
+
+					</table>
+				</div>
+		</div>
+	</div>
+
+	<div id="footer">
+	</div>
+	<SCRIPT src="javaScript/skripte.js"></SCRIPT>
+</BODY>
+</HTML>
